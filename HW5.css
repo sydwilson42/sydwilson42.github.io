@@ -1,0 +1,67 @@
+html {
+	background-color: lightblue;
+}
+h1 {
+	color: white;
+	padding: 2ex 2em;
+	text-align: center;
+}
+
+caption {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.vertical {
+	font-style: italic;
+}
+
+table {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*-----------------------------------------------------Outlines - list style types----------------------------------------------*/
+.outline > li > ol { list-style-type: upper-alpha; }
+.outline > li > ul > li { list-style-type: circle; }
+.outline > li > ol > li { list-style-type: lower-roman; }
+.outline > li > ul > li > ol > li { list-style-type: upper-roman; }
+
+
+/*--------------------------------------------------------Borders on list items---------------------------------------------------*/
+.outline > li > ul {
+    border-top: thick solid;
+	border-left: dashed;
+	border-right: dashed;
+	border-bottom: dotted;
+	padding: 1ex 2em;
+	margin: 1ex 5em;
+}
+.outline > li > ol {
+    border-bottom: dotted;
+    border-top: thick solid;
+    border-left: dashed;
+    border-right: dashed;
+	padding: 1ex 2em;
+	margin: 1ex 5em;
+}
+
+
+/*--------------------------------------------------Changing font size and color of list items-------------------------------------------*/
+.outline > li  { font-size: 20px; color: red; }
+.outline > li > ul > li { font-size: smaller; color: blue; }
+.outline > li > ul > li > ol > li { font-size: smaller; color: green; }
+.outline > li > ol > li { font-size: smaller; color: blue; }
+.outline > li > ol > li > ul > li { font-size: smaller; color: green; }
+
+/*--------------------------------------------------------------Table Border----------------------------------------------------------------*/
+
+table { border-collapse: collapse; }
+
+/* thin solid border below each row... */
+tr { border-bottom: thin solid; } 
+/* thin solid right border on every td... */
+td { border-right: thin solid; }
+/* except the last on each row */
+td:last-of-type { border-right: none; }
