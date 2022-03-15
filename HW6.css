@@ -1,0 +1,57 @@
+/*-----Set up Newspaper Columns-----*/
+.multicol { 
+    columns: 16em;
+	column-rule: thin solid black;
+	
+}
+
+.multicol > h2 { 
+    column-span: all; 
+    text-align: center;
+}
+
+/*---------------Table border and alignment----------------*/
+
+table { 
+	border-collapse: collapse;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* thin solid border below each row... */
+tr { border-bottom: thin solid; } 
+/* thin solid right border on every td... */
+td { border-right: thin solid; }
+/* except the last on each row */
+td:last-of-type { border-right: none; }
+
+.sports tr:last-of-type > td:nth-of-type(1) { vertical-align: top; }
+.sports tr:last-of-type > td:nth-of-type(2) { vertical-align: middle; }
+
+/*-------------Sidenote positioning----------*/
+.note {
+    position: relative;
+    top: auto;
+    color: purple;
+    font-weight: 100;
+	font-size: 20px;
+}
+
+.mascot {
+	font-size: 10px;
+}
+
+/*-------------image floating--------------*/
+
+.pic {
+	float: right;
+}
+
+.link {
+	display: block; 
+	line-height: 25px;
+}
+
+.line {
+	line-height:50px;
+}
+
