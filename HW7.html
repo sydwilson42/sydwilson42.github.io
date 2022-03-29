@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Homework 7, CSC 235</title>
+        <!-- Three ways of including Javascript -->
+        <!-- 1.  External script file -->
+        <script src="HW7.js"></script>
+    </head>
+    <body>
+        <form>
+            <h3>Click to see a hidden message!</h3>
+            <button onclick="doExternalFileThing(this);">Click me!</button>
+        </form>
+        <form>
+            <h3>Finding a random value using: (<code>switch</code>)</h3>
+            <div>
+                <button onclick="getValueASwitch(this);">Click to see what the secret value is!</button>
+            </div>
+			<h3>Doing arithmetic with two variables</h3>
+            <div>
+			<p>Variable X = 12</p>
+			<p>Variable Y = 3</p>
+                <button onclick="Operations(this);">Do operations using variables!</button>
+            </div>
+            <h3>Months of the Year</h3>
+            <div>
+                <button onclick="listMonthsOfYear(this);">List months of the year</button>
+            </div>
+        </form>
+		<form>
+		<h3>One more button!</h3>
+            <button onclick="displayResult(this);">Click me to put together two strings!</button>
+        </form>
+    </body>
+</html> 
