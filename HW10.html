@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>HW10, CSC 235</title>
+        <script src="HW10.js"></script>
+    </head>
+        <h1>HW 10</h1>
+        <div id="remove_replace">
+			<p>Have you ever wanted to try
+                <span id="chosen_sport">a new sport</span>?</p>
+            <form><select name="sport" onchange="setSport(this);">
+                <option value="">&mdash;Select a sport you want to try&mdash;</option>
+                <option>Acrobatics</option>
+                <option>Baseball</option>
+                <option>Basketball</option>
+                <option>Cricket</option>
+				<option>Field Hockey</option>
+				<option>Lacrosse</option>
+                <option>Softball</option>
+                <option>Swimming</option>
+                <option>Volleyball</option>
+            </select></form>
+            <h3>Replacing with a different sport</h3>
+            <form><label>Change</label><select name="sport">
+                <option>Acrobatics</option>
+                <option>Baseball</option>
+                <option>Basketball</option>
+                <option>Cricket</option>
+				<option>Field Hockey</option>
+				<option>Lacrosse</option>
+                <option>Softball</option>
+                <option>Swimming</option>
+                <option>Volleyball</option>
+            </select> to <input type="text" name="newSport"/>
+            <button type="button"
+                onclick="changeSport(this.form);">Make the change!</button>
+			</form>
+        </div>  
+    </body>
+</html>
